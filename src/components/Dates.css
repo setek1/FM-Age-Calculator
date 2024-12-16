@@ -59,6 +59,13 @@
     opacity: 0;
 }
 
+.date_controll .date_input.error {
+	outline: 1px solid #f03e3e;
+}
+.date_input.error + .error-message {
+	opacity: 1;
+}
+
 .date_actions{
     display: flex;
     align-items: center;

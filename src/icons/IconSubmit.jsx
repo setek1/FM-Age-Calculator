@@ -14,13 +14,13 @@ const IconSubmit = () => {
 			<path
 				d='M26 48.0189C33.3333 47.6859 48 51.6158 48 70'
 				stroke='white'
-				stroke-width='2'
+				strokeWidth='2'
 			/>
-			<path d='M48 70V26' stroke='white' stroke-width='2' />
+			<path d='M48 70V26' stroke='white' strokeWidth='2' />
 			<path
 				d='M70 48.0189C62.6667 47.6859 48 51.6158 48 70'
 				stroke='white'
-				stroke-width='2'
+				strokeWidth='2'
 			/>
 		</svg>
   )

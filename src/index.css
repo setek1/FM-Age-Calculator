@@ -11,13 +11,22 @@
     font-weight: 700; /* Bold */
     font-style: normal;
   }
-  
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* Extra Bold */
+    font-style: italic;
+  }
+
   @font-face {
     font-family: 'Poppins';
     src: url('./assets/fonts/Poppins-Italic.ttf') format('truetype');
     font-weight: 400; /* Regular Italic */
     font-style: italic;
   }
+
+  
 
 :root {
     --primary-color: #854dff;
@@ -33,7 +42,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .app_content{
@@ -43,7 +52,47 @@ body{
     padding: 5.6rem;
     border-radius: 2.4rem 2.4rem 20rem 2.4rem;
     transition: all 0.3s;
-    height: 651px;
+    /* height: 651px; */
     margin: 0 25px;
 }
 
+.hidden-line{
+  display: none
+}
+
+
+@media (max-width: 767px) {
+  html{
+    font-size: 50%;
+  }
+
+  .app_content{
+    width: 100%;
+    max-width: 100%;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  html{
+    font-size: 30%;
+  }
+
+  body{
+    overflow: hidden;
+  }
+
+  .hidden-line{
+    display: block
+  }
+
+  .date_actions button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 50rem;
+    height: auto;
+    transition: all 0.3s;
+}
+  
+}
